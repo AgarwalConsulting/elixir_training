@@ -34,7 +34,6 @@ IO.puts "Hello, World!"
 ```
 
 ---
-
 class: center, middle
 
 Code
