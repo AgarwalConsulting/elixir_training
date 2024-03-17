@@ -1133,9 +1133,9 @@ class: center, middle
 
 ### Built-in protocols
 
-- `Enumerable`
-- `String.Chars`
-- `Inspect`
+- [`Enumerable`](https://hexdocs.pm/elixir/Enumerable.html)
+- [`String.Chars`](https://hexdocs.pm/elixir/String.Chars.html)
+- [`Inspect`](https://hexdocs.pm/elixir/Inspect.html)
 - ...
 
 .content-credits[https://hexdocs.pm/elixir/Protocol.html]
