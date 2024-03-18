@@ -10,4 +10,4 @@
 
 - `!`
 
-- `?`
+- `?` - Either holds or evaluates to a boolean true or false value

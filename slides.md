@@ -490,6 +490,11 @@ class: center, middle
 *Related module:* [Access](https://hexdocs.pm/elixir/Access.html)
 
 ---
+class: center, middle
+
+### Updating DS via Pattern Matching
+
+---
 
 #### Map with predefined keys
 
