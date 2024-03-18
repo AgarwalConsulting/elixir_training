@@ -1,6 +1,13 @@
 # Intermediate
 
-1.
+1. [Guessing Game](https://github.com/AgarwalConsulting/Elixir_Training/tree/master/exercises/exercism/guessing-game)
+  - For Guards
+
+2. [Secrets](https://github.com/AgarwalConsulting/Elixir_Training/tree/master/exercises/exercism/secrets)
+  - For anonymous
+
+3. [Bird Count](https://github.com/AgarwalConsulting/Elixir_Training/tree/master/exercises/exercism/bird-count)
+  - For Recursion
 
 4. Mars Rover
 
@@ -30,3 +37,6 @@ Output and new coordinates:
 1 3 N
 5 1 E
 ```
+
+5. [Take a Number](https://github.com/AgarwalConsulting/Elixir_Training/tree/master/exercises/exercism/take-a-number)
+  - For PIDs

@@ -1,6 +1,7 @@
 # Basic Challenges
 
 0. [Log Level](https://github.com/AgarwalConsulting/Elixir_Training/tree/master/exercises/exercism/log-level)
+  - For case/cond and atoms
 
 1. Convert temperatures between Fahrenheit and Celsius.
 
