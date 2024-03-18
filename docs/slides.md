@@ -492,14 +492,14 @@ class: center, middle
 ---
 class: center, middle
 
-### Updating DS via Pattern Matching
+#### Map Module
+
+.content-credits[https://hexdocs.pm/elixir/Map.html#functions]
 
 ---
 class: center, middle
 
-#### Map Module
-
-.content-credits[https://hexdocs.pm/elixir/Map.html#functions]
+### Updating DS via Pattern Matching
 
 ---
 
