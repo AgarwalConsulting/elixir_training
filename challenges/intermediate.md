@@ -59,3 +59,11 @@ You can have the process accept the following messages:
 Have the user enter a string, then loop through the string to generate a new string in which every character is duplicated, e.g., "hello" => "hheelllloo".
 
 Test with "世界" as input.
+
+8. [Remote Control Car](https://github.com/AgarwalConsulting/Elixir_Training/tree/master/exercises/exercism/remote-control-car)
+
+  - Using Structs
+
+9. [Bread and Potions](https://github.com/AgarwalConsulting/Elixir_Training/tree/master/exercises/exercism/bread-and-potions)
+
+  - Using Protocols

@@ -495,6 +495,13 @@ class: center, middle
 ### Updating DS via Pattern Matching
 
 ---
+class: center, middle
+
+#### Map Module
+
+.content-credits[https://hexdocs.pm/elixir/Map.html#functions]
+
+---
 
 #### Map with predefined keys
 
@@ -522,9 +529,34 @@ allows us to pass a function that controls how the value changes
 ---
 class: center, middle
 
-### Map Module
+## Sigils
 
-.content-credits[https://hexdocs.pm/elixir/Map.html#functions]
+---
+class: center, middle
+
+Elixir provides double-quoted strings as well as a concept called `charlists`, which are defined using the `~c"hello world"` sigil syntax.
+
+---
+
+### Other Sigils
+
+- Regular Expressions (`~r`)
+
+- Strings (`~s` / `~S`)
+
+- Word Lists (`~w`)
+
+---
+
+### Calendar Sigils
+
+- Date (`~D`)
+
+- Time (`~T`)
+
+- NaiveDateTime (`~N`)
+
+- UTC DateTime (`~U`)
 
 ---
 class: center, middle
