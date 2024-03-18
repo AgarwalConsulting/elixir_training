@@ -40,3 +40,22 @@ Output and new coordinates:
 
 5. [Take a Number](https://github.com/AgarwalConsulting/Elixir_Training/tree/master/exercises/exercism/take-a-number)
   - For PIDs
+
+6. Company Process
+
+Create a process which allows a user to add employee names to a department in a company. For example, "Add Savita to Engineering" or "Add Agam to Sales." Then let the user retrieve a list of all people in a department or all people in the company by department, sorted alphabetically.
+
+You can have the process accept the following messages:
+
+```elixir
+{:add, "Savita", "Engineering", ...}
+{:add, "Agam", "Sales", ...}
+{:list, "Sales", ...}
+{:list_all, ...}
+```
+
+7. Input from user
+
+Have the user enter a string, then loop through the string to generate a new string in which every character is duplicated, e.g., "hello" => "hheelllloo".
+
+Test with "世界" as input.

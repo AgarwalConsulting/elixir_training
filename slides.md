@@ -522,6 +522,13 @@ allows us to pass a function that controls how the value changes
 ---
 class: center, middle
 
+### Map Module
+
+.content-credits[https://hexdocs.pm/elixir/Map.html#functions]
+
+---
+class: center, middle
+
 ## Enumerables vs Streams
 
 ---
