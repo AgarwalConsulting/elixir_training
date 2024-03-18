@@ -1,12 +1,15 @@
 # Intermediate
 
 1. [Guessing Game](https://github.com/AgarwalConsulting/Elixir_Training/tree/master/exercises/exercism/guessing-game)
+
   - For Guards
 
 2. [Secrets](https://github.com/AgarwalConsulting/Elixir_Training/tree/master/exercises/exercism/secrets)
+
   - For anonymous
 
 3. [Bird Count](https://github.com/AgarwalConsulting/Elixir_Training/tree/master/exercises/exercism/bird-count)
+
   - For Recursion
 
 4. Mars Rover

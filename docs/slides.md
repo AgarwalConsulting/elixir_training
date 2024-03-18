@@ -155,6 +155,15 @@ class: center, middle
 
 ---
 
+#### Truthy and falsy values
+
+Besides the booleans `true` and `false`, Elixir has the concept of a "truthy" or "falsy" value.
+
+- a value is truthy when it is neither `false` nor `nil`
+- a value is falsy when it is either `false` or `nil`
+
+---
+
 ### Comparison
 
 - `==` vs `===`
