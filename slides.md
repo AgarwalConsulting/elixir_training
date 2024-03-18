@@ -60,7 +60,7 @@ r Greet
 ---
 class: center, middle
 
-Naming Conventions
+## Naming Conventions
 
 .content-credits[https://hexdocs.pm/elixir/naming-conventions.html]
 
