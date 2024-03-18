@@ -549,6 +549,13 @@ class: center, middle
 `for` is a syntactic sugar for `Enum.filter` + `Enum.map`
 
 ---
+class: center, middle
+
+#### Enum Cheat Sheet
+
+.content-credits[https://hexdocs.pm/elixir/enum-cheat.html]
+
+---
 
 ### [Streams](https://hexdocs.pm/elixir/Stream.html)
 
