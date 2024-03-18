@@ -27,8 +27,6 @@ class: center, middle
 
 ---
 
-*Eg:*
-
 *Compilation*: `elixirc calculator.ex`; creates a `Elixir.Calculator.beam` bytecode file.
 
 *Scripting*: `elixir scratchpad.exs`
@@ -117,11 +115,18 @@ class: center, middle
 ### Arithmetic
 
 - `+`
+
 - `-`
+
 - `*`
+
 - `/`
+
 - `div`
+
 - `rem`
+
+- `**`
 
 ---
 
@@ -136,7 +141,9 @@ class: center, middle
 ### Boolean
 
 - `&&` vs `and`
+
 - `||` vs `or`
+
 - `!` vs `not`
 
 ---
@@ -145,13 +152,12 @@ class: center, middle
 
 - `==` vs `===`
 
+- `>`, `<`, `>=`, `<=`
+
 ---
+class: center, middle
 
-### List Operators
-
-- `++`
-- `--`
-- `hd`, `tl`
+### Structural vs Semantic
 
 ---
 
@@ -320,6 +326,16 @@ class: center, middle
 - `[]`
 
 - `length` for linear
+
+---
+
+#### List Operators
+
+- `++`
+
+- `--`
+
+- `hd`, `tl`
 
 ---
 class: center, middle
@@ -546,7 +562,7 @@ class: center, middle
 ---
 class: center, middle
 
-`Steam.resource` vs `File.stream!`
+`Stream.resource` vs `File.stream!`
 
 ---
 class: center, middle
@@ -782,6 +798,14 @@ send(:kv, {:get, :hello, self()})
 class: center, middle
 
 Using processes to maintain state and name registration are very common patterns in Elixir applications.
+
+---
+
+Processes are dirt cheap!
+Use lots of them! Lots!
+Focus on their interactions
+
+.content-credits[http://www2.imm.dtu.dk/courses/02157/DTU-BeamsterThinking.pdf]
 
 ---
 
