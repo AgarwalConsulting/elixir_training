@@ -63,10 +63,14 @@ Have the user enter a string, then loop through the string to generate a new str
 
 Test with "世界" as input.
 
-8. [Remote Control Car](https://github.com/AgarwalConsulting/Elixir_Training/tree/master/exercises/exercism/remote-control-car)
+8. [Need for Speed](https://github.com/AgarwalConsulting/Elixir_Training/tree/master/exercises/exercism/need-for-speed)
+
+  - Using alias & import
+
+9. [Remote Control Car](https://github.com/AgarwalConsulting/Elixir_Training/tree/master/exercises/exercism/remote-control-car)
 
   - Using Structs
 
-9. [Bread and Potions](https://github.com/AgarwalConsulting/Elixir_Training/tree/master/exercises/exercism/bread-and-potions)
+10. [Bread and Potions](https://github.com/AgarwalConsulting/Elixir_Training/tree/master/exercises/exercism/bread-and-potions)
 
   - Using Protocols
