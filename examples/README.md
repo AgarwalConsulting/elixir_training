@@ -8,6 +8,6 @@
 
 ## Function Naming Conventions
 
-- `!`
+- `!` - Function can raise an exception or error
 
 - `?` - Either holds or evaluates to a boolean true or false value
