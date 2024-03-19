@@ -1245,6 +1245,111 @@ class: center, middle
 ---
 class: center, middle
 
+## Typespecs
+
+---
+class: center, middle
+
+Elixir is a dynamically typed language, and as such, type specifications are never used by the compiler to optimize or modify code.
+
+---
+
+Still, using type specifications is useful because:
+
+- they provide documentation (for example, tools such as ExDoc show type specifications in the documentation)
+
+- they're used by tools such as Dialyzer, that can analyze code with typespecs to find type inconsistencies and possible bugs
+
+---
+
+Type specifications (most often referred to as typespecs) are defined in different contexts using the following attributes:
+
+- `@type`
+- `@opaque`
+- `@typep`
+- `@spec`
+- `@callback`
+- `@macrocallback`
+
+---
+class: center, middle
+
+```elixir
+defmodule StringHelpers do
+  @typedoc "A word from the dictionary"
+  @type word() :: String.t()
+
+  @spec long_word?(word()) :: boolean()
+  def long_word?(word) when is_binary(word) do
+    String.length(word) > 8
+  end
+end
+```
+
+---
+
+- We declare a new type (`word()`) that is equivalent to the string type (`String.t()`).
+
+- We describe the type using a `@typedoc`, which will be included in the generated documentation.
+
+- We specify that the `long_word?/1` function takes an argument of type `word()` and returns a boolean (`boolean()`), that is, either `true` or `false`.
+
+---
+class: center, middle
+
+### [Types and their syntax](https://hexdocs.pm/elixir/typespecs.html#types-and-their-syntax)
+
+---
+
+#### Remote Types
+
+Any module is also able to define its own types and the modules in Elixir are no exception. For example, the Range module defines a `t/0` type that represents a range: this type can be referred to as `Range.t/0`. In a similar fashion, a string is `String.t/0`, and so on.
+
+---
+class: center, middle
+
+### Behaviours
+
+---
+class: center, middle
+
+Behaviours in Elixir (and Erlang) are a way to separate and abstract the generic part of a component (which becomes the behaviour module) from the specific part (which becomes the callback module).
+
+---
+class: center, middle
+
+#### Parser Example
+
+---
+
+Defining a callback is a matter of defining a specification for that callback, made of:
+
+- the callback name (`parse` or `extensions` in the example)
+
+- the arguments that the callback must accept (`String.t`)
+
+- the expected type of the callback return value
+
+---
+class: center, middle
+
+#### Using Behaviour
+
+---
+class: center, middle
+
+Behaviours are useful because you can pass modules around as arguments and you can then call back to any of the functions specified in the behaviour.
+
+---
+class: center, middle
+
+#### Optional Callbacks
+
+Optional callbacks can be defined through the `@optional_callbacks` module attribute, which has to be a keyword list with `function` or `macro` name as key and `arity` as value.
+
+---
+class: center, middle
+
 Code
 https://github.com/AgarwalConsulting/elixir_training
 
