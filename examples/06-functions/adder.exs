@@ -7,6 +7,8 @@ defmodule Example do
   #   &(by + &1)
   # end
 
+  # def adder(by), do: &(by + &1)
+
   def eval(fun) do
     fun.(32, 10)
   end
