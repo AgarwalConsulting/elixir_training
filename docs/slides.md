@@ -852,6 +852,24 @@ class: center, middle
 - `self()`
 
 ---
+
+### Tasks
+
+- `Task.start`
+
+- `Task.start_link`
+
+---
+class: center, middle
+
+Return value enables tasks to be used in supervision trees.
+
+---
+class: center, middle
+
+`Task.async` + `Task.await`
+
+---
 class: center, middle
 
 ### Maintaining State with Process & Module
@@ -877,29 +895,13 @@ Using processes to maintain state and name registration are very common patterns
 
 ---
 
-Processes are dirt cheap!
-Use lots of them! Lots!
-Focus on their interactions
+- Processes are dirt cheap!
+
+- Use lots of them! Lots!
+
+- Focus on their interactions
 
 .content-credits[http://www2.imm.dtu.dk/courses/02157/DTU-BeamsterThinking.pdf]
-
----
-
-### Tasks
-
-- `Task.start`
-
-- `Task.start_link`
-
----
-class: center, middle
-
-Return value enables tasks to be used in supervision trees.
-
----
-class: center, middle
-
-`Task.async` + `Task.await`
 
 ---
 class: center, middle
