@@ -314,6 +314,15 @@ class: center, middle
 ---
 class: center, middle
 
+```elixir
+for <var_or_pattern> <- <enumerable>, <condition_statement>, do
+
+end
+```
+
+---
+class: center, middle
+
 `into:`
 
 ---
