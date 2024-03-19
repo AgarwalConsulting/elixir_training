@@ -579,70 +579,6 @@ Elixir provides double-quoted strings as well as a concept called `charlists`, w
 ---
 class: center, middle
 
-## Enumerables vs Streams
-
----
-
-### [Enumerables](https://hexdocs.pm/elixir/Enum.html)
-
-- `map`
-
-- `reduce`
-
-- `filter`
-
-- `sum`
-
-- ...
-
----
-class: center, middle
-
-`|>`
-
----
-class: center, middle
-
-`for` is a syntactic sugar for `Enum.filter` + `Enum.map`
-
----
-class: center, middle
-
-#### Enum Cheat Sheet
-
-.content-credits[https://hexdocs.pm/elixir/enum-cheat.html]
-
----
-
-### [Streams](https://hexdocs.pm/elixir/Stream.html)
-
-Supports lazy operations
-
-- `map`
-
-- `transform`
-
-- `filter`
-
-- `sum`
-
-- `unfold`
-
-- ...
-
----
-class: center, middle
-
-`Stream.cycle` + `Enum.take`
-
----
-class: center, middle
-
-`Stream.resource` vs `File.stream!`
-
----
-class: center, middle
-
 ## Functions
 
 ---
@@ -742,6 +678,16 @@ def hello(%{name: person_name}), do: IO.puts "Hello, #{person_name}"
 ---
 class: center, middle
 
+## Recursion (instead of Loops)
+
+---
+class: center, middle
+
+TCO
+
+---
+class: center, middle
+
 ## Anonymous Functions
 
 ---
@@ -798,12 +744,66 @@ Arguments can be denoted using `&<ordinal>`
 ---
 class: center, middle
 
-## Recursion (instead of Loops)
+## Enumerables vs Streams
+
+---
+
+### [Enumerables](https://hexdocs.pm/elixir/Enum.html)
+
+- `map`
+
+- `reduce`
+
+- `filter`
+
+- `sum`
+
+- ...
 
 ---
 class: center, middle
 
-TCO
+`|>`
+
+---
+class: center, middle
+
+`for` is a syntactic sugar for `Enum.filter` + `Enum.map`
+
+---
+class: center, middle
+
+#### Enum Cheat Sheet
+
+.content-credits[https://hexdocs.pm/elixir/enum-cheat.html]
+
+---
+
+### [Streams](https://hexdocs.pm/elixir/Stream.html)
+
+Supports lazy operations
+
+- `map`
+
+- `transform`
+
+- `filter`
+
+- `sum`
+
+- `unfold`
+
+- ...
+
+---
+class: center, middle
+
+`Stream.cycle` + `Enum.take`
+
+---
+class: center, middle
+
+`Stream.resource` vs `File.stream!`
 
 ---
 class: center, middle
