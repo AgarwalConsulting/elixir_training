@@ -9,7 +9,7 @@ defmodule Echo do
     receive do
       {:io_request, caller, reply_as, msg} ->
         IO.inspect msg
-        send(caller, {:io_reply, reply_as, msg})
+        send(caller, {:io_reply, reply_as, msg}) # Refer: https://www.erlang.org/doc/apps/stdlib/io_protocol.html
         loop()
       msg ->
         IO.inspect msg
