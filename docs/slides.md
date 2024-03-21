@@ -1800,6 +1800,21 @@ MIX_ENV=prod mix compile
 ---
 class: center, middle
 
+## OTP
+
+---
+class: center, middle
+
+### Genserver (& Supervisor)
+
+---
+class: center, middle
+
+## Phoenix Framework
+
+---
+class: center, middle
+
 Code
 https://github.com/AgarwalConsulting/elixir_training
 

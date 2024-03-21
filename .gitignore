@@ -17,3 +17,4 @@ erl_crash.dump
 ### Elixir Patch ###
 
 # End of https://www.toptal.com/developers/gitignore/api/elixir
+live/
