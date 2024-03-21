@@ -1807,6 +1807,8 @@ class: center, middle
 
 ### Genserver (& Supervisor)
 
+.content-credits[https://hexdocs.pm/elixir/GenServer.html]
+
 ---
 class: center, middle
 
