@@ -10,8 +10,12 @@ defmodule SimpleKV do
     GenServer.cast(pid, {:get, key})
   end
 
-  def set(pid, key, value) do
-    GenServer.call(pid, {:set, key, value})
+  def put(pid, key, value) do
+    GenServer.call(pid, {:put, key, value})
+  end
+
+  def stop(pid) do
+    GenServer.stop(pid, :normal)
   end
 
   ## Server API
@@ -21,12 +25,17 @@ defmodule SimpleKV do
   end
 
   @impl GenServer
-  def handle_cast({:set, key, value}, state) do
+  def handle_cast({:put, key, value}, state) do
     {:no_reply, Map.put(state, key, value)}
   end
 
   @impl GenServer
   def handle_call({:get, key}, _from, state) do
     {:reply, Map.get(state, key), state}
+  end
+
+  @impl GenServer
+  def terminate(reason, state) do
+    :ok
   end
 end
