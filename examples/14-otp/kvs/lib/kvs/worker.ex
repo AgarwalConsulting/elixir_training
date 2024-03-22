@@ -1,9 +1,9 @@
-defmodule SimpleKV do
+defmodule Kvs.Worker do
   use GenServer
 
   # Client API
   def start_link(default) do
-    GenServer.start_link(__MODULE__, default || %{})
+    GenServer.start_link(__MODULE__, default || %{}, name: __MODULE__)
   end
 
   def get(pid, key) do
@@ -26,7 +26,7 @@ defmodule SimpleKV do
 
   @impl GenServer
   def handle_cast({:put, key, value}, state) do
-    {:noreply, Map.put(state, key, value)}
+    {:no_reply, Map.put(state, key, value)}
   end
 
   @impl GenServer
@@ -35,7 +35,7 @@ defmodule SimpleKV do
   end
 
   @impl GenServer
-  def terminate(reason, state) do
+  def terminate(_reason, _state) do
     :ok
   end
 end
