@@ -4,7 +4,8 @@
 
 ```bash
 mix archieve.install hex phx_new
-mix phx.new hello --no-ecto
+# mix phx.new hello --no-ecto
+mix phx.new toshiba-wl --database sqlite3
 ```
 
 ## Phoenix
@@ -14,6 +15,14 @@ mix phx.new hello --no-ecto
 ```bash
 mix phx.routes
 mix phx.server
+```
+
+### Generators
+
+```bash
+mix phx.gen.html Hris Employee employees name:string project_id:integer department:string
+
+mix phx.gen.live Hris Employee employees name:string project_id:integer department:string
 ```
 
 ## Curl
