@@ -18,7 +18,7 @@ defmodule Say do
   end
 end
 
-pids = for id <- 1..10 do
+pids = for id <- 1..2 do
   IO.puts "Starting say #{id}..."
   spawn fn -> Say.say(id) end
 end
@@ -26,18 +26,23 @@ end
 defmodule WaitGroup do
   def monitor(pids) do
     Enum.each(pids, &Process.monitor/1)
+    wait(pids, length(pids))
   end
 
-  def wait(0), do: :ok
+  defp wait(_, 0), do: :ok
 
-  def wait(count) do
+  defp wait(pids, count) do
     receive do
-      {:DOWN, _, _, _, _} -> wait(count - 1)
+      {:DOWN, _, _, pid, _} ->
+        if Enum.member?(pids, pid) do
+          wait(pids, count - 1)
+        else
+          wait(pids, count)
+        end
     end
   end
 end
 
 WaitGroup.monitor(pids)
-WaitGroup.wait(length(pids))
 
 IO.puts "Completed all say!"
