@@ -105,3 +105,13 @@ MIX_ENV=prod mix compile
 ```
 
 ---
+
+## OTP
+
+- `GenServer`s abstract the `receive do loop`
+  - it is a behavior
+
+- Use Supervisor for keep GenServer processes up and running
+  - `mix new <app_name> -sup`
+
+- Monitor a process using: `Process.monitor`
